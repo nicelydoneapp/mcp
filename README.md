@@ -30,8 +30,10 @@ The requested permissions are `library:read`, `saved:read`, and
 
 ## Example requests
 
-- Find dashboard references for Peec (https://peec.ai), with Visibility,
-  Position, and Sentiment metrics.
+- Find UI and UX references for a workspace app like Notion.
+- Find examples of pricing pages with quarterly billing plans.
+- Find best practices for two-factor authentication and write a specification
+  with UI examples and source links.
 - Find onboarding flows and explain the steps in a useful example.
 - Show my saved screens and collections.
 
