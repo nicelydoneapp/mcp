@@ -37,16 +37,48 @@ The requested permissions are `library:read`, `saved:read`, and
 - Find onboarding flows and explain the steps in a useful example.
 - Show my saved screens and collections.
 
-## Package
+## Install in Claude Code
 
-The Cursor plugin manifest is `.cursor-plugin/plugin.json`. The remote MCP
-connection is in `mcp.json`. The package contains no local commands, hooks,
-agent definitions, or bundled skills.
+Run these commands in your terminal:
+
+```sh
+claude plugin marketplace add nicelydoneapp/mcp
+claude plugin install nicelydone@nicelydone
+```
+
+Start a new Claude Code session. Open `/mcp`, select the Nicelydone connection,
+and complete OAuth with your Nicelydone account. Ask Claude to check the
+connection, then try an example request above.
+
+The GitHub marketplace provides direct installation. It does not mean that
+Anthropic has approved a directory listing.
+
+For a local check before publishing an update, run:
+
+```sh
+claude plugin validate .claude-plugin/plugin.json --strict
+claude plugin validate .claude-plugin/marketplace.json --strict
+```
+
+## Install in Cursor
 
 For local testing in Cursor, copy this package to
 `~/.cursor/plugins/local/nicelydone`, reload Cursor, and check the MCP connection
-in Customize. Complete OAuth, call `test`, and run a read-only search. Availability
-can depend on the account's plugin policy. Complete these checks before relying on the connection.
+in Customize. Complete OAuth, call `test`, and run a read-only search.
+Availability can depend on the account's plugin policy. Complete these checks
+before relying on the connection.
+
+## Package
+
+- `.claude-plugin/plugin.json` declares the Claude plugin and its remote HTTP
+  MCP connection.
+- `.claude-plugin/marketplace.json` lists the plugin for direct installation
+  from this repository.
+- `.cursor-plugin/plugin.json` declares the Cursor plugin.
+- `mcp.json` contains the Cursor remote MCP connection.
+
+Both formats connect to the same hosted endpoint. The package contains no
+local commands, hooks, agent definitions, or bundled skills.
 
 ## Support and policies
 

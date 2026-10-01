@@ -1,0 +1,14 @@
+{
+  "name": "nicelydone",
+  "owner": {
+    "name": "Forwards",
+    "email": "contact@forwardslabs.com"
+  },
+  "plugins": [
+    {
+      "name": "nicelydone",
+      "source": "./"
+    }
+  ],
+  "description": "Nicelydone tools for UI and UX design research."
+}
