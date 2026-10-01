@@ -1,0 +1,22 @@
+{
+  "name": "nicelydone",
+  "version": "1.0.0",
+  "description": "Find real web app screens, UI elements, and user flows for design research. Read saved references and organize screens in Nicelydone collections.",
+  "author": {
+    "name": "Forwards",
+    "email": "contact@forwardslabs.com"
+  },
+  "homepage": "https://nicelydone.club/mcp",
+  "keywords": [
+    "design",
+    "ui",
+    "ux",
+    "screens",
+    "user-flows",
+    "design-research"
+  ],
+  "logo": "assets/icon.png",
+  "mcpServers": "mcp.json",
+  "repository": "https://github.com/nicelydoneapp/mcp",
+  "license": "MIT"
+}
