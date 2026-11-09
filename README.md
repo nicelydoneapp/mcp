@@ -37,6 +37,16 @@ The requested permissions are `library:read`, `saved:read`, and
 - Find onboarding flows and explain the steps in a useful example.
 - Show my saved screens and collections.
 
+## Install the agent skill
+
+```sh
+npx skills add nicelydoneapp/mcp --skill nicelydone-mcp
+```
+
+The skill explains how to connect to MCP and use it for research and saved
+references. Sign in through your MCP client to access the library.
+[Read the skill](skills/nicelydone-mcp/SKILL.md).
+
 ## Install in Claude Code
 
 Run these commands in your terminal:
@@ -76,9 +86,9 @@ before relying on the connection.
   from this repository.
 - `.cursor-plugin/plugin.json` declares the Cursor plugin.
 - `mcp.json` contains the Cursor remote MCP connection.
+- `skills/nicelydone-mcp/SKILL.md` teaches agents to use the hosted MCP server.
 
-Both formats connect to the same hosted endpoint. The package contains no
-local commands, hooks, agent definitions, or bundled skills.
+Both plugin formats connect to the same hosted endpoint.
 
 ## Support and policies
 
